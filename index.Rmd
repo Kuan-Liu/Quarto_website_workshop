@@ -23,7 +23,7 @@ output:
 
 ## Front matters
 
--  For this workshop we assume you know R and Rstudio and used and write output using Rmarkdown before.
+-  For this workshop we assume you know R and Rstudio and have used Rmarkdown before.
 
 -  In this tutorial, we will
     1.  introduce Quarto and how to build a simple personal website using Quarto and hosting the page on [GitHub](https://github.com/)
