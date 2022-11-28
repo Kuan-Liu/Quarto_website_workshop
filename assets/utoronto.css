@@ -12,7 +12,7 @@
   padding-bottom: 32px;
   background-color: white;
   color: #002A5C; /*UT blue*/
-  font-size: 20pt;  /*smallest try 18pt, largest try 26pt*/
+  font-size: 22pt;  /*smallest try 18pt, largest try 26pt*/
   font-weight: 200;
   line-height: 1.2;
   border-top: 5px solid #002A5C; 
@@ -100,7 +100,6 @@ this is meant to be used for (section) title page*/
 }
 .ut-pantone_lime {
   background-color: #DAE5CD;
-  background-image: url(UT-Logo.svg);
   background-size: 320px;
   background-position: 95% 100%;
   color: black;
@@ -310,3 +309,18 @@ blockquote, .blockquote {
 https://github.com/yihui/xaringan/tree/master/inst/rmarkdown/templates/xaringan/resources
 */
 
+```{css echo=FALSE}
+.panelset {
+   --panel-tab-foreground: currentColor;
+   --panel-tab-background: unset;
+   --panel-tab-active-foreground: currentColor;
+   --panel-tab-active-background: unset;
+   --panel-tab-active-border-color: currentColor;
+   --panel-tab-hover-foreground: currentColor;
+   --panel-tab-hover-background: unset;
+   --panel-tab-hover-border-color: currentColor;
+   --panel-tab-inactive-opacity: 0.5;
+   --panel-tabs-border-bottom: #ddd;
+   --panel-tab-font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+}
+```
