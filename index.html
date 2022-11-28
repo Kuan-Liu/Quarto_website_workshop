@@ -361,14 +361,109 @@ class: ut-pantone_yellow
 ## What is blogdown?
 
 -  An R package for building website using R Markdown and [Hugo](https://gohugo.io/)
+    -  building website via Hugo using Rmarkdown
+
+-  Hugo
+    -  no cost, open-source, and easy to install
+    -  tons of features for fancy customization if you are familiar with css (Cascading Style Sheets)
+    -  example website: https://www.kuan-liu.com/
+    
+-  blogdown book: https://bookdown.org/yihui/blogdown/
 
 
 ---
+
+## Getting started
+
+-  Be sure that you have installed the **blogdown** package
+
+
+```r
+install.packages("blogdown")
+blogdown::install_hugo()
+blogdown::hugo_version()
+```
+
+-  list of Hugo themes: https://themes.gohugo.io/
+    -  for my personal website I used the [hello-friend-ng](https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/) theme
+    -  go to https://themes.gohugo.io/ and take a quick look at all the amazing Hugo theme templates
+
+---
+
+class: left, ut-pantone_lime
+
+## Try this - create a new blogdown project
+
+.pull.left[
+
+-  create a new project, select website using blogdown, specify Hugo theme `hugo-apero/hugo-apero`
+
+-  developed by the awesome [Alison Hill](https://www.apreshill.com/about/)
+
+]
+
+.pull.right[
+
+&lt;img src="assets\blogdown1.png" alt="drawing" width="500"/&gt;
+]
+---
+class: left, ut-pantone_lime
+
+## Try this - building website
+
+-  explore the project structure
+
+-  try Knit the website
+
+-  subfolder *content* contents all markdown files or rmarkdown files for your website
+
+-  More resources
+
+&lt;iframe width="480" height="235" src="https://www.youtube.com/embed/RksaNh5Ywbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+
+## Publishing on Netlify
+
+-  create and upload repo on GitHub via GitHub desktop
+
+-  log in to your netlify account via GitHub!
+
+-  select add new site \&gt; import an existing project \&gt; connect to GitHub \&gt; select repo
+
+-  update domains names
+
+
+&lt;img src="assets\netlify.png" alt="drawing" width="560"/&gt;
+
+---
+class: left, ut-pantone_lime
+
+## Live demo - pulishing website on Netlify
+
+---
+
 ## Acknowledgement
 
 - "Permanent link" to the slides at https://kuan-liu.github.io/Quarto_website_workshop/
 
-- Credit: This template and tutorial is created based on [Tom Mock](https://rstudio-conf-2022.github.io/get-started-quarto/) and [Yihui Xie](https://bookdown.org/yihui/blogdown/)'s work.
+- Credit: This template and tutorial is created based on [Tom Mock](https://rstudio-conf-2022.github.io/get-started-quarto/), [Yihui Xie](https://bookdown.org/yihui/blogdown/), and [Alison Hill](https://www.apreshill.com/talk/2021-iyo-tunis/)'s work
+
+---
+
+background-image: url("https://arthistory.utoronto.ca/sites/arthistory.utoronto.ca/files/styles/slider_large_img/public/front_carousel/HH01.jpg?itok=ukdDyPF0")
+background-position: bottom
+background-size: contain
+
+## Thank you! 🥂
+
+-  Free feel to reach me at kuan.liu at utoronto.ca ❤️
+
+-  Materials for this workshop
+    -  [online slides](https://kuan-liu.github.io/Quarto_website_workshop/#1)
+    -  [Quarto template personal page repo](https://github.com/Kuan-Liu/Kuan-Liu.github.io)
+    -  [Quarto template personal page](https://kuan-liu.github.io/)
+
 
 
     </textarea>
