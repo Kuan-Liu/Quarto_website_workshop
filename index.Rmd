@@ -45,7 +45,7 @@ class: center, middle
 --
 
 
-Publish high-quality.black[articles], .red[reports], .blue[presentations], .green[websites], .yello[blogs], and .orange[books] in HTML, PDF, MS Word, ePub, and more.
+Publish high-quality .black[articles], .red[reports], .blue[presentations], .green[websites], .yello[blogs], and .orange[books] in HTML, PDF, MS Word, ePub, and more.
 
 --
 
