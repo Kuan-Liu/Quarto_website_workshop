@@ -1,7 +1,7 @@
 ---
 title: "Building a Personal Website <br> using Quarto and blogdown"
-author: "<br>Kuan Liu<br> <br> Health Data Working Group - R workshop"
-date: "<br>Nov 28, 2022"
+author: "<br>Kuan Liu<br> <br> Guest lecture - R workshop"
+date: "<br>Nov 20, 2023"
 start: "0:0:0"
 output:
   xaringan::moon_reader:
