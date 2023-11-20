@@ -42,11 +42,13 @@ class: center, middle, inverse, title-slide
 
 ## Front matters
 
--  For this workshop we assume you know R and Rstudio and have used Rmarkdown before.
+-  For this workshop we assume you know R and Rstudio.
 
 -  In this tutorial, we will
     1.  introduce Quarto and how to build a simple personal website using Quarto and hosting the page on [GitHub](https://github.com/)
     2.  introduce blogdown with a live-demo to build a quick blogdown template website and deploy it on [netlify](https://www.netlify.com/)
+
+-  Let's start with a 15 mins [tutorial on markdown](https://commonmark.org/help/tutorial/)
 
 ---
 
@@ -106,7 +108,7 @@ class: ut-pantone_yellow
 
 ## Why not WordPress, Medium etc
 
--  No Rmarkdown support
+-  **Minimum Rmarkdown support**
 
 -  no ads, no login/password, no cost!
 
@@ -245,13 +247,14 @@ class: left, ut-pantone_lime
 
 ## Try this - customize the about page
 
--  create a subfolder in your working directory called "images" and put a thumbnail photo in this folder
+-  create a subfolder in your working directory called "images" and put a thumbnail photo in this folder (for example, HDWG.jpg).
 
 -  now updating the about page title section with
 
 ``` yaml
 about:
   template: jolla
+  image: images/HDWG.jpg
   links:
     - icon: twitter
       text: twitter
@@ -325,16 +328,34 @@ class: left, ut-pantone_lime
 1.  create blog.qmd and specify in the title section
 
 ```---
+title: my blogs
 listing:
   contents: posts
+  sort: "date desc"
   type: default
+  categories: true
 ---
 ```
 
 2.  create a sub folder name it "posts", under "posts" create another sub folder name it "blog1"
 
-3.  inside blog1 folder try Blank File \&gt; Quarto document and name it index.qmd ([example](https://kuan-liu.github.io/blog.html))
-    -  this index.qmd will host content of your blog!
+---
+## Writing a post
+
+1.  inside blog1 folder try Blank File \&gt; Quarto document and name it index.qmd ([example](https://kuan-liu.github.io/blog.html)). 
+    -  **This index.qmd will host content of your blog!**
+
+2.  specify in the title section of blog1/index.qmd
+
+```---
+title: "My first post with R"
+description: "you can post a summary description here"
+author: "Kuan"
+date: "11/20/2023"
+categories:
+  - R code
+---
+```
 
 ---
 
@@ -386,8 +407,10 @@ class: ut-pantone_yellow
 
 ```r
 install.packages("blogdown")
-blogdown::install_hugo()
+blogdown::install_hugo(version="0.86.0")
 blogdown::hugo_version()
+# if you have multiple version of hugo, you can specify which version to use;
+# options(blogdown.hugo.version = '0.86.0')
 ```
 
 -  list of Hugo themes: https://themes.gohugo.io/
