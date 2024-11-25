@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Building a Personal Website   using Quarto and blogdown</title>
+    <title>Building a Personal Website using Quarto</title>
     <meta charset="utf-8" />
     <meta name="author" content=" Kuan Liu    Guest lecture - R workshop" />
-    <script src="index_files/header-attrs-2.23/header-attrs.js"></script>
+    <script src="index_files/header-attrs-2.28/header-attrs.js"></script>
     <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -26,13 +26,13 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# Building a Personal Website <br> using Quarto and blogdown
+# Building a Personal Website using Quarto
 ]
 .author[
 ### <br>Kuan Liu<br> <br> Guest lecture - R workshop
 ]
 .date[
-### <br>Nov 20, 2023
+### <br>Nov 24, 2024
 ]
 
 ---
@@ -44,11 +44,8 @@ class: center, middle, inverse, title-slide
 
 -  For this workshop we assume you know R and Rstudio.
 
--  In this tutorial, we will
-    1.  introduce Quarto and how to build a simple personal website using Quarto and hosting the page on [GitHub](https://github.com/)
-    2.  introduce blogdown with a live-demo to build a quick blogdown template website and deploy it on [netlify](https://www.netlify.com/)
+-  In this tutorial, we will learn how to build a simple personal website using Quarto and hosting the page on [GitHub](https://github.com/)
 
--  Let's start with a 15 mins [tutorial on markdown](https://commonmark.org/help/tutorial/)
 
 ---
 
@@ -137,13 +134,6 @@ Example website: https://kuan-liu.github.io/biostat3/
 ---
 ## Getting started
 
--  Be sure that you have installed the **Quarto** package
-
-
-```r
-install.packages("quarto")
-```
-
 -  Create a website
 
 ```
@@ -160,8 +150,6 @@ quarto create-project MyBlogName --type website:blog
 
 -  or use RStudio \&gt; New Project \&gt; New Quarto Blog
 
-
-&lt;!-- -  You can download or fork the entire repo at  to start coding your own website! 🥂 --&gt;
 
 ---
 
@@ -405,7 +393,7 @@ class: ut-pantone_yellow
 -  Be sure that you have installed the **blogdown** package
 
 
-```r
+``` r
 install.packages("blogdown")
 blogdown::install_hugo(version="0.86.0")
 blogdown::hugo_version()
@@ -427,8 +415,6 @@ class: left, ut-pantone_lime
 
 -  create a new project, select website using blogdown, specify Hugo theme `hugo-apero/hugo-apero`
 
--  developed by the awesome [Alison Hill](https://www.apreshill.com/about/)
-
 ]
 
 .pull.right[
@@ -445,10 +431,6 @@ class: left, ut-pantone_lime
 -  try Knit the website
 
 -  subfolder *content* contents all markdown files or rmarkdown files for your website
-
--  More resources
-
-&lt;iframe width="480" height="235" src="https://www.youtube.com/embed/RksaNh5Ywbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 ---
 
@@ -476,7 +458,7 @@ class: left, ut-pantone_lime
 
 - "Permanent link" to the slides at https://kuan-liu.github.io/Quarto_website_workshop/
 
-- Credit: This template and tutorial is created based on [Tom Mock](https://rstudio-conf-2022.github.io/get-started-quarto/), [Yihui Xie](https://bookdown.org/yihui/blogdown/), and [Alison Hill](https://www.apreshill.com/talk/2021-iyo-tunis/)'s work
+- Credit: This template and tutorial is created based on [Tom Mock](https://rstudio-conf-2022.github.io/get-started-quarto/)
 
 ---
 
@@ -484,9 +466,7 @@ background-image: url("https://arthistory.utoronto.ca/sites/arthistory.utoronto.
 background-position: bottom
 background-size: contain
 
-## Thank you! 🥂
-
--  Free feel to reach me at kuan.liu at utoronto.ca ❤️
+## Thank you! 
 
 -  Materials for this workshop
     -  [online slides](https://kuan-liu.github.io/Quarto_website_workshop/#1)
